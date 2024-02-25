@@ -147,6 +147,7 @@ result.append(result[0])
 for i in range(0, len(result) - 1, 2):
     temp_index = int(result[i])
     result_str += f' -> {my_path_list[temp_index-1]}'
+result_str += f' -> {my_path_list[int(result[0])-1]}'
 result_str = result_str[4:]
 print(result_str)
 
